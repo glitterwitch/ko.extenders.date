@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>ko.extenders.date demo</title>
+</head>
+<body>
+<h1>Date Formatting in Action</h1>
+
+<ol>
+  <li>My Birthday:
+    <span data-bind="text: myBirthday"></span>
+  </li>
+  <li>Day of the week:
+    <span data-bind="text: dayOfTheWeek"></span>
+  </li>
+  <li>
+    <form>
+    <fieldset>
+    <label for="userInputDate">Input your own date</label>
+    <input id="userInputDate" name="userInputDate" data-bind="value: userInputDate, valueUpdate: 'afterkeydown'" />
+    <p>Formatted date:</p>
+    <p data-bind="text: formattedInputDate"></p>
+    <input type="reset" value="Reset Date" />
+    </fieldset>
+    </form>
+  </li>
+</ol>
+
+<script type="text/javascript" src="js/knockout-2.2.1.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/ko.extenders.date.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+</body>
+</html>
